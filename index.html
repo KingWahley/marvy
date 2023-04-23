@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marvy</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="black" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="description" content="Hello! I'm Marvy an AI specially designed to help you find
+              information on movies by providing their summaries and cover
+              posters based on your inputs. I'll do my best to give you accurate
+              and helpful information.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Robot Emoji Icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">
+        <span>
+          <h1>&#x1F916 Marvy</h1>
+          <!-- <button class="next" onclick= 'aid()' type="submit" id="rotate-button">Next</button> -->
+        </span>
+        
+      </div>
+      <div class="change">
+        <button class="next1" onclick= 'previous()' type="submit" id="utton">Previous</button>
+        <button class="next" onclick= 'aid()' type="submit" id="rotate-button">Next Movie with similar title</button>
+        
+      </div>
+      <div class="loader">
+        <p></p>
+      </div>
+
+      <div class="mess">
+        <p class="marvy" ><span class="red-text"> &#x1F916 Marvy : </span><span class="text"></span>... &#x1F60A<span></span></p>
+      </div>
+    
+      <div class="chat-history" id="movie-info"></div>
+      <div class="chat-input">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Enter a movie title..."
+        />
+        <button type="submit" id="search-button">Search</button>
+      </div>
+    </div>
+    <!-- <div class="error"></div> -->
+    <script src="app.js"></script>
+  </body>
+</html>
