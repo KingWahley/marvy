@@ -50,7 +50,10 @@ body {
   max-width: 500px;
   margin: 20px auto;
   background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .change {
@@ -130,6 +133,8 @@ body {
   justify-content: space-between;
   padding: 15px;
   border-top: 1px solid #eee;
+  /* position: absolute;
+  bottom: 0px; */
 }
 
 .chat-input input[type="text"] {
@@ -190,10 +195,12 @@ body {
 
   .chat-history p {
     max-width: 90%;
+    height: 100%;
   }
 
   .chat-input {
     padding: 10px;
+    border-top: 4px solid #eee;
   }
 
   .chat-input input[type="text"] {
@@ -205,5 +212,13 @@ body {
   }
   .poster {
     width: 250px;
+  }
+  .chat-container {
+    box-shadow: none;
+    border-radius: 0px;
+    margin: 0px;
+  }
+  .chat-header {
+    border-radius: 0px;
   }
 }

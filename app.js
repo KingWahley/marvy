@@ -11,7 +11,7 @@ const loader = document.querySelector(".loader");
 
 // 'initial welcome message'
 text = `Hello!... I'm Marvy and I have been specially designed to help you find
-              information on movies by providing their summaries and cover
+              information on movies by providing summaries and cover
               posters based on your inputs. I'll do my best to give you accurate
               and helpful information. Enter a movie title below to give me a try`;
 
